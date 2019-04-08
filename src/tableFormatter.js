@@ -45,6 +45,10 @@ function format(table) {
           table[i][j-1] = table[i][j-1].toString() + " ";
           table[i][j] = table[i][j].toString();
         }
+        else if (table[i][j-1] >= 100 && table[i][j] >= 100) {
+          table[i][j-1] = table[i][j-1].toString() + " ";
+          table[i][j] = table[i][j].toString();
+        }
       }
     }
   }
